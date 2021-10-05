@@ -8,14 +8,12 @@
 - 头部姿态估计  用上面做的2D的面部关键点匹配3D模型，求解3D和2D的对应关系(cv2.solvePnp)  参考代码 https://github.com/lincolnhard/head-pose-estimation      
 - ui是用pyqt5写的  
 
-<<<<<<< HEAD
 - 人脸检测和人脸68个关键点的检测用的都是dlib的检测器，权重也用的是dlib提供的   
 - 睡意检测是计算面部关键点的相对位置关系与设定的阈值做对比判断的         
 - ui是用pyqt5写的  
 
 模型整体比较简单，码量也很少   
 
-=======
 模型整体比较简单，码量也很少  
 运行时ui界面组件大小可能不正常，这可能与电脑屏幕分辨率，屏幕比例，摄像头分辨率有关 
 ## 环境
@@ -26,7 +24,6 @@ pyqtgraph               0.12.2
 scipy                 1.1.0
 
 ## 可能的更新
->>>>>>> 643ab92... 1.0
 这里提2个可以优化的点，之后闲下来可能会做一下。（~~最近大概率是没啥时间了~~）   
 1. 面部关键点检测：dlib的检测器比较古老，偏头的话检测效果不好。可以用WFLW的数据集自己训练自己的模型（https://wywu.github.io/projects/LAB/WFLW.html)。 用什么算法就见仁见智了。可以用提供该数据集的实验室提出的一种算法"Look at Boundary: A Boundary-Aware Face Alignment Algorithm"
 2. 使用关键点检测睡意：加入时间序列  
