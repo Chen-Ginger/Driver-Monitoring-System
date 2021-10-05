@@ -14,9 +14,11 @@ ui是用pyqt5写的
     一个9.5小时包含正常驾驶、打哈欠、眨眼速度慢、睡着等状态的Drowsiness Detection Dataset。比较坑的是没有开源，得写小作文发邮件问他们要 (http://cv.cs.nthu.edu.tw/php/callforpaper/datasets/DDD/index.html)。也可以试一下他们提出的算法“Driver Drowsiness Detection via a Hierarchical Temporal Deep Belief Network”
 
 ## demo
-![Eyeclosed](\demo\eyeclosed.png)
-![Eyeclosed](\demo\EyeclosedAndYawning.png)
-![Eyeclosed](\demo\nod.png)
+![Eyeclosed](https://github.com/Chen-Ginger/Driver-Monitoring-System/tree/master/demo/eyeclosed.png)
+
+![Eyeclosed](https://github.com/Chen-Ginger/Driver-Monitoring-System/tree/master/demo/EyeclosedAndYawning.png)
+
+![Eyeclosed](https://github.com/Chen-Ginger/Driver-Monitoring-System/tree/master/demo/nod.png)
 
 
 
