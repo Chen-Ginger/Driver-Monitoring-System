@@ -155,7 +155,7 @@ class mainwin(QtWidgets.QMainWindow, window.Ui_MainWindow):
         self.datapitch = np.array([])
         self.datayaw = np.array([])
         self.dataroll= np.array([])
-        self.pitchshersh = np.full(30,0.3)
+        self.pitchshersh = np.full(30,5)
         self.yawshershpo = np.full(30,20)
         self.yawshershne = np.full(30, -20)
         self.curve_pitch = self.graphicsView_POSE.plot(self.datapitch,pen = 'g')
@@ -212,7 +212,7 @@ class mainwin(QtWidgets.QMainWindow, window.Ui_MainWindow):
         MAR_THRESH = 0.8
         MOUTH_AR_CONSEC_FRAMES = 4
         # 瞌睡点头
-        HAR_THRESH = 3
+        HAR_THRESH = 5
         NOD_AR_CONSEC_FRAMES = 4
         # 初始化帧计数器和眨眼总数
         COUNTER = 0
