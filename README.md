@@ -1,6 +1,11 @@
 # Driver-Monitoring-System
 
-[toc]
+- [Driver-Monitoring-System](#driver-monitoring-system)
+  - [简介](#简介)
+  - [环境](#环境)
+  - [可能的更新](#可能的更新)
+  - [demo](#demo)
+  - [pyinstaller 打包的坑](#pyinstaller-打包的坑)
 ## 简介
 主要完成了通过面部表情分析和头部姿态估计检测是否瞌睡
 - 人脸检测和人脸68个关键点的检测用的都是dlib的检测器，权重也用的是dlib提供的   
@@ -8,9 +13,6 @@
 - 头部姿态估计  用上面做的2D的面部关键点匹配3D模型，求解3D和2D的对应关系(cv2.solvePnp)  参考代码 https://github.com/lincolnhard/head-pose-estimation      
 - ui是用pyqt5写的  
 
-- 人脸检测和人脸68个关键点的检测用的都是dlib的检测器，权重也用的是dlib提供的   
-- 睡意检测是计算面部关键点的相对位置关系与设定的阈值做对比判断的         
-- ui是用pyqt5写的  
 
 模型整体比较简单，码量也很少   
 
@@ -38,8 +40,8 @@ scipy                 1.1.0
 ![EyeclosedAndYawning.png](https://i.loli.net/2021/10/05/OBpzx5Ngt3UMDq6.png)
 
 ![nod.png](https://i.loli.net/2021/10/05/4jO2oF1JbSaARuW.png)
-<<<<<<< HEAD
-=======
+
+
 
 
 ## pyinstaller 打包的坑
@@ -49,7 +51,7 @@ scipy                 1.1.0
 2. scipy DLL load fail：
    打包时加上  --add-binary .../scipy/extra-dll/*;.
    新版本scipy应该是没有extra-dll文件夹的，只能降版本了
->>>>>>> 643ab92... 1.0
+
 
 虽然解决方法比较简单，但是试错过程非常曲折啊，这2处debug耗费了五六个小时，吐了
 
